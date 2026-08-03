@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Walkie Talkie Pro</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="chat-container">
+
+<div class="sidebar">
+
+<h2>الغرف</h2>
+
+<div id="roomList">
+
+<div class="room active">
+
+🌍 المحادثة العامة
+
+</div>
+
+</div>
+
+<button id="createRoom">
+
+➕ إنشاء غرفة
+
+</button>
+
+</div>
+
+<div class="chat">
+
+<div class="chat-top">
+
+<div>
+
+<h3 id="roomName">
+
+المحادثة العامة
+
+</h3>
+
+<p>
+
+🟢 متصل
+
+</p>
+
+</div>
+
+<div>
+
+<button id="voiceCall">
+
+📞
+
+</button>
+
+<button id="videoCall">
+
+📹
+
+</button>
+
+</div>
+
+</div>
+
+<div id="messages">
+
+</div>
+
+<div class="tools">
+
+<button>
+
+📷 صورة
+
+</button>
+
+<button>
+
+🎥 فيديو
+
+</button>
+
+<button>
+
+📎 ملف
+
+</button>
+
+<button>
+
+🎤 تسجيل
+
+</button>
+
+</div>
+
+<div class="send">
+
+<input
+id="message"
+
+placeholder="اكتب رسالة...">
+
+<button id="send">
+
+إرسال
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
