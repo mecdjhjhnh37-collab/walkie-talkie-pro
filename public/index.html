@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Walkie Talkie Pro</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- شاشة الترحيب -->
+
+<div id="loginPage">
+
+<div class="loginBox">
+
+<h1>👋 مرحباً بك</h1>
+
+<p>في موقع المطور <b>مجد</b></p>
+
+<hr>
+
+<h2>🇹🇷 Hoş Geldiniz</h2>
+
+<p>Geliştirici <b>Mecd</b>'in sitesine hoş geldiniz.</p>
+
+<input
+id="username"
+type="text"
+placeholder="اكتب اسمك">
+
+<button id="loginBtn">
+
+الدخول
+
+</button>
+
+</div>
+
+</div>
+
+<!-- صفحة الغرف -->
+
+<div id="roomsPage" class="hidden">
+
+<header>
+
+<h2>Walkie Talkie Pro</h2>
+
+<button id="newRoom">
+
+➕ إنشاء غرفة
+
+</button>
+
+</header>
+
+<div id="rooms">
+
+<div class="room">
+
+🌍 المحادثة العامة
+
+</div>
+
+</div>
+
+</div>
+
+<!-- صفحة المحادثة -->
+
+<div id="chatPage" class="hidden">
+
+<header>
+
+<button id="back">
+
+⬅
+
+</button>
+
+<h3 id="roomName">
+
+الغرفة
+
+</h3>
+
+</header>
+
+<div id="messages">
+
+</div>
+
+<div id="sendBox">
+
+<input
+id="message"
+placeholder="اكتب رسالة...">
+
+<button id="send">
+
+إرسال
+
+</button>
+
+</div>
+
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
